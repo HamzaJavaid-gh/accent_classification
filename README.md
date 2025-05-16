@@ -2,7 +2,7 @@
 
 This is a Streamlit-based application that classifies the accent in an audio or video file using the [SpeechBrain](https://speechbrain.readthedocs.io/en/latest/index.html) pretrained model for English accents.
 
-![Accent Classification App Screenshot](resources\streamlit_ui.png)
+![Accent Classification App Screenshot](resources/streamlit_ui.png)
 
 ## 🔍 Features
 
@@ -29,17 +29,21 @@ Install the dependencies (from a clean Python 3.10 environment):
 ```bash
 pip install speechbrain
 pip install -U torch torchaudio --no-cache-dir
+```
 
 ---
 
+## 🚀 Run the App
 
-## 📦 Run the App
-
+```bash
 python -m streamlit run accent_classification_ui/streamlit_ui.py
+```
 
+---
 
-## Project Structure
+## 📁 Project Structure
 
+```
 accent_classification/
 ├── accent_classification_engine/       # Core logic (conversion, classification)
 ├── accent_classification_ui/           # Streamlit UI
@@ -48,7 +52,12 @@ accent_classification/
 ├── pyproject.toml
 ├── Makefile
 └── README.md
+```
 
+---
 
-##Run tests:
+## 🧪 Run Tests
+
+```bash
 make test
+```
