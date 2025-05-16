@@ -1,0 +1,38 @@
+[project]
+name = "accent-classification"
+version = "0.1.0"
+description = "A Streamlit-based app for accent classification using SpeechBrain."
+authors = [
+    { name="hamza javaid", email="hamzajaved479@gmail,com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit",
+    "speechbrain",
+    "torch",
+    "torchaudio",
+    "pytest"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+    "isort"
+]
+
+[tool.setuptools]
+packages = ["accent_classification_engine", "accent_classification_ui"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]

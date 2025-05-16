@@ -1,0 +1,5 @@
+# requirements used in notebooks for data loading, visualization and the like, but not used by the package itself
+-r requirements.txt
+
+# for running jupyter notebooks
+ipykernel

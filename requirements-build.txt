@@ -1,0 +1,5 @@
+# requirements used for building the package
+-r requirements.txt
+
+build
+twine
