@@ -27,6 +27,7 @@ This is a Streamlit-based application that classifies the accent in an audio or 
 Install the dependencies (from a clean Python 3.10 environment):
 
 ```bash
+pip install streamlit
 pip install speechbrain
 pip install -U torch torchaudio --no-cache-dir
 ```
